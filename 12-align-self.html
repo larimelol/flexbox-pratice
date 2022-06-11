@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+         .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .flex-start{
+            align-self: flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>Align-Self: MIX</p>
+    <div class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item center">123</div>
+        <div class="item flex-start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+        <div class="item stretch">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+    </div>
+
+    <p>Align-Self: Auto</p>
+    <div class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Center</p>
+    <div class="flex-container align-container">
+        <div class="item center">AAA</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item center">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Flex-Start</p>
+    <div class="flex-container align-container">
+        <div class="item flex-start">AAA</div>
+        <div class="item flex-start">123</div>
+        <div class="item flex-start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-start">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Flex-End</p>
+    <div class="flex-container align-container">
+        <div class="item flex-end">AAA</div>
+        <div class="item flex-end">123</div>
+        <div class="item flex-end">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Stretch</p>
+    <div class="flex-container align-container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item stretch">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Baseline</p>
+    <div class="flex-container align-container">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item baseline">ITEM 4</div>
+    </div>
+
+    <h1>COLUMN</h1>
+    <p>Align-Self: MIX</p>
+    <div class="flex-container align-container column">
+        <div class="item auto">AAA</div>
+        <div class="item center">123</div>
+        <div class="item flex-start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+        <div class="item stretch">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+    </div>
+    
+    <p>Align-Self: Auto</p>
+    <div class="flex-container align-container column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Center</p>
+    <div class="flex-container align-container column">
+        <div class="item center">AAA</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item center">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Flex-Start</p>
+    <div class="flex-container align-container column">
+        <div class="item flex-start">AAA</div>
+        <div class="item flex-start">123</div>
+        <div class="item flex-start">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-start">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Flex-End</p>
+    <div class="flex-container align-container column">
+        <div class="item flex-end">AAA</div>
+        <div class="item flex-end">123</div>
+        <div class="item flex-end">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Stretch</p>
+    <div class="flex-container align-container column">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item stretch">ITEM 4</div>
+    </div>
+
+    <p>Align-Self: Baseline</p>
+    <div class="flex-container align-container column">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item baseline">ITEM 4</div>
+    </div>
+</body>
+</html>
